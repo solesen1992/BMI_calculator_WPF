@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <GroupBox x:Name="groupBox" Header="Vægtklasse" Margin="225,217,324,70">
+            <TextBlock x:Name="male" HorizontalAlignment="Left" Margin="117,0,0,0" TextWrapping="Wrap" Height="103"><Run Language="da-dk" Text="Mænd"/><LineBreak/><Run Language="da-dk" Text="&lt; 20"/><LineBreak/><Run Language="da-dk" Text="20,0-25,0"/><LineBreak/><Run Language="da-dk" Text="25,0-30,0"/><LineBreak/><Run Language="da-dk" Text="&gt;30"/></TextBlock>
+        </GroupBox>
+        <TextBox x:Name="tbHoejde" HorizontalAlignment="Left" Margin="283,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"/>
+        <TextBox x:Name="tbVaegt" HorizontalAlignment="Left" Margin="283,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"/>
+        <ComboBox x:Name="tbKoen" HorizontalAlignment="Left" Margin="283,136,0,0" VerticalAlignment="Top" Width="67" Text="Vælg køn">
+            <ListBoxItem Content="Mand"/>
+            <ListBoxItem Content="Kvinde"/>
+        </ComboBox>
+        <TextBlock x:Name="testyourWeight" HorizontalAlignment="Left" Margin="380,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="T"/><Run Language="da-dk" Text="est din vægt!"/></TextBlock>
+        <Button x:Name="tbResultat" Content="Beregn!" HorizontalAlignment="Left" Margin="361,155,0,0" VerticalAlignment="Top" Height="42" Width="111" Click="btn_resultat"/>
+        <TextBlock x:Name="female" HorizontalAlignment="Left" Margin="412,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Height="100"><Run Text="Kvinder"/><LineBreak/><Run Text="&lt;18,6"/><LineBreak/><Run Text="18,6-23,"/><Run Language="da-dk" Text="8"/><LineBreak/><Run Language="da-dk" Text="23,8-28,6"/><LineBreak/><Run Language="da-dk" Text="&gt; 28,6"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="description" HorizontalAlignment="Left" Margin="235,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="da-dk" Text="Undervægtige"/><LineBreak/><Run Language="da-dk" Text="Normalvægtige"/><LineBreak/><Run Language="da-dk" Text="Overvægtige"/><LineBreak/><Run Language="da-dk" Text="Svær overvægtige"/><LineBreak/><Run Language="da-dk"/><LineBreak/><Run Language="da-dk"/></TextBlock>
+        <TextBlock x:Name="height" HorizontalAlignment="Left" Margin="226,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Højde"/><Run Language="da-dk" Text=" (m)"/></TextBlock>
+        <TextBlock x:Name="sex" HorizontalAlignment="Left" Margin="226,139,0,0" TextWrapping="Wrap" Text="Køn" VerticalAlignment="Top"/>
+        <TextBlock x:Name="weight" HorizontalAlignment="Left" Margin="226,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Vægt"/><Run Text=" (kg)"/><LineBreak/><Run/></TextBlock>
 
     </Grid>
 </Window>
